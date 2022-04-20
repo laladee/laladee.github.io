@@ -8,19 +8,27 @@
 </head>
 
 <body>
-  <div class="locationstar" id="stars"></div>
-  <div class="locationstar" id="stars2"></div>
-  <div class="locationstar" id="stars3"></div>
-  <div class="bg-video-wrap">
-    <img class="logo" src="./home/IWzJRg5.jpg"></img>
-    <div class="overlay">
-      <img class="logo" src="./home/logo.svg"></img>
-      <h2>VISUAL EFFECTS & CYBER SECURITY</h2>
-      <p>$ what are you looking for?
-      <p>
-        <div class="arrow" onclick="location.href='./CGI'"></div>
-        <div class="arrow2" onclick="location.href='./home/1_fApaeq6-ht-s6Cdu6qdlrQ.gif'"></div>
+  <div class="container">
+    <div class="locationstar" id="stars"></div>
+    <div class="locationstar" id="stars2"></div>
+    <div class="locationstar" id="stars3"></div>
+    <div class="bg-video-wrap">
+      <img class="logo" src="./home/IWzJRg5.jpg"></img>
+      <div class="overlay">
+        <img class="logo" src="./home/logo.svg"></img>
+        <h2>VISUAL EFFECTS & CYBER SECURITY</h2>
+        <p>$ what are you looking for?
+        <p>
+          <div class="arrow" onclick="location.href='./CGI'"></div>
+          <div class="arrow2" onclick="location.href='./home/1_fApaeq6-ht-s6Cdu6qdlrQ.gif'"></div>
       </div>
     </div>
+  </div>
+    <script>
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        document.getElementsByClassName('container')[0].style.display = "none";
+        document.write("<p style='padding: 7%'>This site isn't supported for mobile devices</p>");
+      }
+    </script>
   </body>
 </html>
