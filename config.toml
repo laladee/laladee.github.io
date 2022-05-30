@@ -1,0 +1,4 @@
+baseURL = 'https://laladee.github.io'
+languageCode = 'en-us'
+title = 'Laladee'
+theme = "yinyang"

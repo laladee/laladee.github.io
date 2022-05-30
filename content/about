@@ -20,7 +20,7 @@
         <!-- nav -->
         <nav>
           <ul>
-            <a id="text_neon" onclick="location.href='./'">HOME</a>
+            <a id="text_neon" onclick="location.href='./cgi'">HOME</a>
             <a id="text_neon">ABOUT ME</a>
             <a id="text_neon" onclick="location.href='../'">LALADEE</a>
 
