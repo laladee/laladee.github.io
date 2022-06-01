@@ -7,21 +7,23 @@ categories = [
 
 +++
 
-### SSH Tunnel
+## SSH Tunnel
 
 - config in `/etc/ssh/sshd_config`
 
 - `N - do not execute a remote command`
 
-#### Socket tunnel with SSH
+### Socket tunnel with SSH
 
 ```bash
 ssh -ND 8080 username@12.12.12.12
 ```
 
-#### Port forwarding with SSH
+Now configure SOCKS proxy to 127.0.0.1 port 8080, all the traffic is now tunneled through 12.12.12.12 as a VPN.
 
-**Remote port forwarding:**
+### Port forwarding with SSH
+
+**Local port forwarding:**
 
 ```bash
 ssh -g -NL 1337:12.12.12.150:8000 username@12.12.12.12
