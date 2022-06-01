@@ -13,13 +13,13 @@ categories = [
 
 - `N - do not execute a remote command`
 
-##### Socket tunnel with SSH
+#### Socket tunnel with SSH
 
 ```bash
 ssh -ND 8080 username@12.12.12.12
 ```
 
-##### Port forwarding with SSH
+#### Port forwarding with SSH
 
 **Remote port forwarding:**
 
