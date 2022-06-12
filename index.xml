@@ -7,4 +7,9 @@ Remote port forwarding: GatewayPorts yes</description></item><item><title>Androi
 Others: subfinder, findomain, assetfinder
 Directory brute-force Directory brute-force with gobuster gobuster dir -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt -u http://hackerone.com/backups/ -t 20 -x zip,txt,log,db,json,js,conf Wordlist: Fuzzing/fuzz-Bo0oM.txt, Web-Content/common.txt
 Directory brute-force with wfuzz wfuzz -c -w /usr/share/seclists/Discovery/Web-Content/big.txt -z list,php-txt-zip-log-db-json --hc 403,404 -t 20 -u http://10.10.10.187/utility-scripts/FUZZ.FUZ2Z --hc/hl/hw/hh: Hide responses with the specified code/lines/words/chars
--c: Output with colors</description></item></channel></rss>
+-c: Output with colors</description></item><item><title>Operating System</title><link>https://laladee.github.io/secnote/operating-system/</link><pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate><guid>https://laladee.github.io/secnote/operating-system/</guid><description>Lost grub Some reasons:
+Upgrade BIOS Reinstall windows while using dual OS Grub not installed in Linux installation progress Re-install grub Re-install grub bootloader
+Use boot-repair-disk as a rescue tool if can&amp;rsquo;t boot into linux os, setup into the USB and boot it up
+grub-install /dev/sda update-grub Check the disk with fdisk -l or blkid
+Use BOOTICE
+UEFI uses efi files in EFI partition to boot the OS, as Windows is bootmgfw.</description></item></channel></rss>
