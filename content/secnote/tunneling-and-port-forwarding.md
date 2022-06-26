@@ -2,7 +2,7 @@
 title = "Tunneling and Port Forwarding"
 date = "2021-05-27"
 categories = [
-    "Network",
+    "network",
 ]
 
 +++
@@ -38,4 +38,3 @@ ssh -g -NR 1337:127.0.0.1:8000 username@12.12.12.12
 ```
 
 Now connect to 12.12.12.12 on port 1337 will get tunneled to 127.0.0.1 on port 8000 via my computer. This often used to give access my local network from internet.
-
