@@ -26,7 +26,7 @@ Others: [subfinder](https://github.com/projectdiscovery/subfinder), [findomain](
 ### Directory brute-force with gobuster
 
 ```bash
-gobuster dir -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt -u http://hackerone.com/backups/ -t 20 -x zip,txt,log,db,json,js,conf
+gobuster dir -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt -u http://hackerone.com/backups/ -t 20 --status-codes-blacklist -x zip,txt,log,db,json,js,conf
 ```
 
 Wordlist: Fuzzing/fuzz-Bo0oM.txt, Web-Content/common.txt
