@@ -135,8 +135,6 @@ for pid in $(ps -aux | grep osquery | grep -v color=auto | awk '{print $2}'); do
 
 A list of useful powershell scripts with 100% AV bypass ratio, tested on Windows 11 (At the time of publication): https://github.com/tihanyin/PSSW100AVB
 
-Others: https://github.com/t3l3machus/hoaxshell
-
 A magic tip with nim language https://github.com/dmknght/RevShellNim, https://github.com/Potato-Industries/nimrs
 
 ```bash

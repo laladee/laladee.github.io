@@ -23,13 +23,17 @@ Others: [subfinder](https://github.com/projectdiscovery/subfinder), [findomain](
 
 ## Directory brute-force
 
+Wordlist: assetnote, Fuzzing/fuzz-Bo0oM.txt, Web-Content/common.txt
+
+### Directory brute-force with ffuf
+```bash
+ffuf -u http://118.70.116.235:8052/current_config/FUZZ -w ~/Downloads/assetnote/data/manual/raft-large-directories-lowercase.txt -ac -mc 200,204,301,307,400,401,403,405 -t 10 -e .js,.conf
+```
 ### Directory brute-force with gobuster
 
 ```bash
-gobuster dir -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt -u http://hackerone.com/backups/ -t 20 --status-codes-blacklist -x zip,txt,log,db,json,js,conf
+gobuster dir -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt -u http://hackerone.com/backups/ -t 20 -x zip,txt,log,db,json,js,conf --status-codes-blacklist
 ```
-
-Wordlist: Fuzzing/fuzz-Bo0oM.txt, Web-Content/common.txt
 
 ### Directory brute-force with wfuzz
 
@@ -42,4 +46,10 @@ wfuzz -c -w /usr/share/seclists/Discovery/Web-Content/big.txt -z list,php-txt-zi
 `-c`: Output with colors
 
 
+## Parameter brute-force
+### Parameter brute-force with x8
+```bash
+x8 -u https://hackerone.com/reset -w ~/Downloads/reindeer/wordlists/param_adu_vjp -X POST -t json
+```
 
+`-t`: type (urlencode, json)
