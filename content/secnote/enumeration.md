@@ -23,7 +23,7 @@ Others: [subfinder](https://github.com/projectdiscovery/subfinder), [findomain](
 
 ## Directory brute-force
 
-Wordlist: assetnote, Fuzzing/fuzz-Bo0oM.txt, Web-Content/common.txt
+Wordlist: assetnote, Fuzzing/fuzz-Bo0oM.txt, Web-Content/common.txt, Web-Content/raft-large-directories.txt
 
 ### Directory brute-force with ffuf
 ```bash
