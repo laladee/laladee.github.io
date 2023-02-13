@@ -19,6 +19,11 @@ Example of config file https://github.com/OWASP/Amass/blob/master/examples/confi
 
 Others: [subfinder](https://github.com/projectdiscovery/subfinder), [findomain](https://github.com/Edu4rdSHL/findomain/), [assetfinder](https://github.com/tomnomnom/assetfinder)
 
+### Subdomain & CIDRs by organization
+
+```
+spk -silent -s "HackerOne" | dnsx -silent -ptr -resp-only
+```
 
 
 ## Directory brute-force
