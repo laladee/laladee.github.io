@@ -21,7 +21,7 @@ Others: [subfinder](https://github.com/projectdiscovery/subfinder), [findomain](
 
 ### Subdomain & CIDRs by organization
 
-```
+```bash
 spk -silent -s "HackerOne" | dnsx -silent -ptr -resp-only
 ```
 
