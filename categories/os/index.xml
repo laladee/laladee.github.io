@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OS on Laladee</title><link>https://laladee.github.io/categories/os/</link><description>Recent content in OS on Laladee</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 31 Dec 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://laladee.github.io/categories/os/index.xml" rel="self" type="application/rss+xml"/><item><title>Operating System</title><link>https://laladee.github.io/secnote/operating-system/</link><pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate><guid>https://laladee.github.io/secnote/operating-system/</guid><description>Lost grub bootloader Some reasons lead to lost grub:
-Upgrade BIOS Reinstall windows while using dual OS Grub not installed in Linux installation progress Re-install grub bootloader Use boot-repair-disk as a rescue tool if can&amp;rsquo;t boot into linux os, setup into the USB and boot it up
-grub-install /dev/sda update-grub Check the disk with fdisk -l or blkid
-Using BOOTICE to modify UEFI uses efi files in EFI partition to boot the OS, as Windows is bootmgfw.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OS on Laladee</title><link>https://laladee.github.io/categories/os/</link><description>Recent content in OS on Laladee</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 31 Dec 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://laladee.github.io/categories/os/index.xml" rel="self" type="application/rss+xml"/><item><title>Operating System</title><link>https://laladee.github.io/secnote/operating-system/</link><pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate><guid>https://laladee.github.io/secnote/operating-system/</guid><description>&lt;h2 id="lost-grub-bootloader">Lost grub bootloader&lt;/h2>
+&lt;p>Some reasons lead to lost grub:&lt;/p>
+&lt;ul>
+&lt;li>Upgrade BIOS&lt;/li>
+&lt;li>Reinstall windows while using dual OS&lt;/li>
+&lt;li>Grub not installed in Linux installation progress&lt;/li>
+&lt;/ul>
+&lt;h3 id="re-install-grub-bootloader">Re-install grub bootloader&lt;/h3>
+&lt;p>Use &lt;a href="https://sourceforge.net/projects/boot-repair-cd/">boot-repair-disk&lt;/a> as a rescue tool if can&amp;rsquo;t boot into linux os, setup into the USB and boot it up&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>grub-install /dev/sda
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>update-grub
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Check the disk with &lt;code>fdisk -l&lt;/code> or &lt;code>blkid&lt;/code>&lt;/p>
+&lt;h3 id="using-bootice-to-modify">Using BOOTICE to modify&lt;/h3>
+&lt;p>UEFI uses &lt;code>efi&lt;/code> files in EFI partition to boot the OS, as Windows is &lt;code>bootmgfw.efi&lt;/code>, Kali Linux is &lt;code>grubx64.efi&lt;/code>,&amp;hellip; Now setup a boot entry on the top of order. Go to &lt;code>UEFI&lt;/code> tab &amp;gt; &lt;code>Edit boot entries&lt;/code>&lt;/p></description></item></channel></rss>

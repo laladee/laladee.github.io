@@ -1,6 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>network on Laladee</title><link>https://laladee.github.io/categories/network/</link><description>Recent content in network on Laladee</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 27 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laladee.github.io/categories/network/index.xml" rel="self" type="application/rss+xml"/><item><title>Tunneling and Port Forwarding</title><link>https://laladee.github.io/secnote/tunneling-and-port-forwarding/</link><pubDate>Thu, 27 May 2021 00:00:00 +0000</pubDate><guid>https://laladee.github.io/secnote/tunneling-and-port-forwarding/</guid><description>SSH Tunnel config in /etc/ssh/sshd_config
-N - do not execute a remote command
-Socket tunnel with SSH ssh -ND 8080 username@12.12.12.12 Now configure SOCKS proxy to 127.0.0.1 port 8080, all the traffic is now tunneled through 12.12.12.12 as a VPN.
-Port forwarding with SSH Local port forwarding:
-ssh -g -NL 1337:12.12.12.150:8000 username@12.12.12.12 Now connect to [::]/127.0.0.1 on port 1337 will get tunneled to 12.12.12.150:8000 via 12.12.12.12
-Remote port forwarding: GatewayPorts yes</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Network on Laladee</title><link>https://laladee.github.io/categories/network/</link><description>Recent content in Network on Laladee</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 27 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://laladee.github.io/categories/network/index.xml" rel="self" type="application/rss+xml"/><item><title>Tunneling and Port Forwarding</title><link>https://laladee.github.io/secnote/tunneling-and-port-forwarding/</link><pubDate>Thu, 27 May 2021 00:00:00 +0000</pubDate><guid>https://laladee.github.io/secnote/tunneling-and-port-forwarding/</guid><description>&lt;h2 id="ssh-tunnel">SSH Tunnel&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>config in &lt;code>/etc/ssh/sshd_config&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>N - do not execute a remote command&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="socket-tunnel-with-ssh">Socket tunnel with SSH&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh -ND &lt;span style="color:#ae81ff">8080&lt;/span> username@12.12.12.12
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now configure SOCKS proxy to 127.0.0.1 port 8080, all the traffic is now tunneled through 12.12.12.12 as a VPN.&lt;/p>
+&lt;h3 id="port-forwarding-with-ssh">Port forwarding with SSH&lt;/h3>
+&lt;p>&lt;strong>Local port forwarding:&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>ssh -g -NL 1337:12.12.12.150:8000 username@12.12.12.12
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now connect to &lt;code>[::]/127.0.0.1&lt;/code> on port 1337 will get tunneled to 12.12.12.150:8000 via 12.12.12.12&lt;/p>
+&lt;p>&lt;strong>Remote port forwarding:&lt;/strong> &lt;code>GatewayPorts yes&lt;/code>&lt;/p></description></item></channel></rss>
