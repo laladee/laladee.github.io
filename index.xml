@@ -84,8 +84,8 @@ rename: &lt;code>mv burp.crt 9a5ba575.0&lt;/code>&lt;/li>
 &lt;head>
  &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  &lt;meta name="viewport" content="width=device-width, initial-scale=1">
- &lt;link rel="stylesheet" href="../hoangnguyen_files/hoangnguyen.css" type="text/css">
- &lt;script src=".../hoangnguyen_files/hoangnguyen.js">&lt;/script>
+ &lt;link rel="stylesheet" href="./hoangnguyen_files/hoangnguyen.css" type="text/css">
+ &lt;script src="./hoangnguyen_files/hoangnguyen.js">&lt;/script>
  &lt;title>Laladee - Hoang Nguyen&lt;/title>
  &lt;link rel="icon" type="image/x-icon" href="../home/fav.ico">
 &lt;/head>
@@ -99,7 +99,7 @@ rename: &lt;code>mv burp.crt 9a5ba575.0&lt;/code>&lt;/li>
  &lt;!-- nav -->
  &lt;nav>
  &lt;ul>
- &lt;a id="text_neon" onclick="location.href='../cgi'">HOME&lt;/a>
+ &lt;a id="text_neon" onclick="location.href='./cgi'">HOME&lt;/a>
  &lt;a id="text_neon">ABOUT ME&lt;/a>
  &lt;a id="text_neon" onclick="location.href='../'">LALADEE&lt;/a>
 
@@ -148,8 +148,8 @@ rename: &lt;code>mv burp.crt 9a5ba575.0&lt;/code>&lt;/li>
 &lt;head>
  &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  &lt;meta name="viewport" content="width=device-width, initial-scale=1">
- &lt;link rel="stylesheet" href="../hoangnguyen_files/hoangnguyen.css" type="text/css">
- &lt;script src="../hoangnguyen_files/hoangnguyen.js">&lt;/script>
+ &lt;link rel="stylesheet" href="./hoangnguyen_files/hoangnguyen.css" type="text/css">
+ &lt;script src="./hoangnguyen_files/hoangnguyen.js">&lt;/script>
  &lt;title>Laladee - Hoang Nguyen&lt;/title>
  &lt;link rel="icon" type="image/x-icon" href="../home/fav.ico">
 &lt;/head>
@@ -162,8 +162,8 @@ rename: &lt;code>mv burp.crt 9a5ba575.0&lt;/code>&lt;/li>
  &lt;!-- nav -->
  &lt;nav>
  &lt;ul>
- &lt;a id="text_neon" onclick="location.href='../'">HOME&lt;/a>
- &lt;a id="text_neon" onclick="location.href='../about'">ABOUT ME&lt;/a>
+ &lt;a id="text_neon">HOME&lt;/a>
+ &lt;a id="text_neon" onclick="location.href='./about'">ABOUT ME&lt;/a>
  &lt;a id="text_neon" onclick="location.href='../'">LALADEE&lt;/a>
  &lt;/ul>
  &lt;/nav>
@@ -180,7 +180,7 @@ rename: &lt;code>mv burp.crt 9a5ba575.0&lt;/code>&lt;/li>
  &lt;p id="text_neon" style="text-align:center;">ARTIST&lt;/p>
  &lt;/div>
  &lt;video autoplay loop muted class="wrapper__video">
- &lt;source src="../hoangnguyen_files/A.mp4">
+ &lt;source src="./hoangnguyen_files/A.mp4">
  &lt;/video>
  &lt;/div>
  &lt;section class="banner bg1">
@@ -286,8 +286,8 @@ rename: &lt;code>mv burp.crt 9a5ba575.0&lt;/code>&lt;/li>
 	&lt;meta name="description" content="Search utility for Laladee's sec notes">
 	&lt;meta name="author" content="Laladee">
 
-	&lt;link rel="stylesheet" href="../sec.assets/style.css">
-	&lt;script src="../sec.assets/logic.js">&lt;/script>
+	&lt;link rel="stylesheet" href="./sec.assets/style.css">
+	&lt;script src="./sec.assets/logic.js">&lt;/script>
 
 	&lt;title>Laladee - Search&lt;/title>
 &lt;/head>
@@ -346,7 +346,7 @@ rename: &lt;code>mv burp.crt 9a5ba575.0&lt;/code>&lt;/li>
 			&lt;/div>
 
 			&lt;div class="subfooter">
-				&lt;h3>Quick search from my &lt;a href="../secnote">note&lt;/a>&lt;/h3>
+				&lt;h3>Quick search from my &lt;a href="https://laladee.github.io/secnote">note&lt;/a>&lt;/h3>
 			&lt;/div>
 		&lt;/div>
 
