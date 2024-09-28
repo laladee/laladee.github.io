@@ -286,8 +286,8 @@ rename: &lt;code>mv burp.crt 9a5ba575.0&lt;/code>&lt;/li>
 	&lt;meta name="description" content="Search utility for Laladee's sec notes">
 	&lt;meta name="author" content="Laladee">
 
-	&lt;link rel="stylesheet" href="./sec.assets/style.css">
-	&lt;script src="./sec.assets/logic.js">&lt;/script>
+	&lt;link rel="stylesheet" href="sec.assets/style.css">
+	&lt;script src="sec.assets/logic.js">&lt;/script>
 
 	&lt;title>Laladee - Search&lt;/title>
 &lt;/head>
