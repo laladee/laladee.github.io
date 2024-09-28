@@ -3,6 +3,7 @@ license = "MIT"
 licenselink = "https://github.com/joway/hugo-theme-yinyang/blob/master/LICENSE"
 description = "Yinyang theme for Hugo."
 homepage = "https://github.com/joway/hugo-theme-yinyang"
+
 tags = [
   "blog",
   "minimal",
@@ -16,7 +17,7 @@ features = ["blog"]
 min_version = "0.50"
 
 [params]
-staticPrefix = ""
+staticPrefix = "static"
 # extraCSSFiles = ["css/foo.css", "css/bar.css"]
 extraCSSFiles = []
 
