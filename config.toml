@@ -3,3 +3,4 @@ languageCode = 'en-us'
 title = 'Laladee'
 theme = "yinyang"
 publishDir = "public"
+staticPrefix = "static"
