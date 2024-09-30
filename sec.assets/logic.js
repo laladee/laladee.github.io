@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (event.type == 'submit') event.preventDefault();
     }
 
-    fetch('sec/sec.assets/dataset.json')
+    fetch('/sec.assets/dataset.json')
         .then(res => res.json())
         .then(data => {
             window.dataset = data;
