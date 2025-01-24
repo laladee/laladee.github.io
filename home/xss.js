@@ -1,3 +1,3 @@
 alert(origin);
 
-// access this domain predrwtowgwtdtpwxtzii6viwpkay1hg7.oast.fun
+// check it up this is new voucher on http://predrwtowgwtdtpwxtzii6viwpkay1hg7.oast.fun
