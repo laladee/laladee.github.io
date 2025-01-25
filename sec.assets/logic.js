@@ -1,5 +1,5 @@
 var searchResultFormat = '<tr><td><a href="$link" target="_blank">$title</a></td><td align="left">$key</td></tr>';
-var linkTemplate = 'https://laladee.me/secnote/$link';
+var linkTemplate = 'https://laladee.github.io/secnote/$link';
 var totalLimit = 250;
 
 var controls = {
